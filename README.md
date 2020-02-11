@@ -86,9 +86,20 @@ int main() {
 ## Hello World
 ```rust
 fn main() {
-    println!("Hellow World");
+    println!("Hello World");
 }
 ```
+
+# Agenda
+* Introduction
+* Ownership and borrowing
+* Avoiding pitfalls of C/C++
+* Structs and enums
+* Traits
+* OOP in rust
+* Integrating C/C++ libraries into Rust
+* Application: Messageboard
+
 
 # Sources
 * https://www.rust-lang.org/
