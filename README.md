@@ -86,7 +86,7 @@ int main() {
 ## Hello World
 ```rust
 fn main() {
-    println!("Hello World");
+    println!("Hello, world!");
 }
 ```
 
