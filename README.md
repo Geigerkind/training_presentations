@@ -10,11 +10,11 @@ class Dog {
     std::string mName;
 public:
     Dog(const char* name) {
-        mName = std::string(name);
+        mName = std::move(name);
     }
 
     void bark() {
-        std::cout << mName << ": " << "Wuff!" << std::endl;
+        std::cout << "Wuff!" << std::endl;
     }
 };
 
@@ -100,6 +100,7 @@ cargo run
 * Avoiding pitfalls of C/C++
 * Structs and enums
 * Traits
+* Structuring in Rust
 * OOP in rust
 * Integrating C/C++ libraries into Rust
 * Application: Messageboard using Rocket
@@ -182,7 +183,65 @@ int main() {
 }
 ```
 
+# References & Borrowing
+> * At any given time, you can have either one mutable reference or any number of immutable references.
+> * References must always be valid.
 
+## Passing a variable to a function without loosing ownership
+```rust
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+
+fn main() {
+    let s1 = String::from("hello");
+
+    let len = calculate_length(&s1);
+
+    println!("The length of '{}' is {}.", s1, len);
+}
+```
+<img src="img/borrowing/borrowing.svg" alt="drawing" width="500"/>
+
+## Explicit mutability instead of implicit mutability
+```rust
+fn main() {
+    let mut s = String::from("hello");
+
+    change(&mut s);
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+
+```
+
+## Either one mutable refrence or many immutable references
+### Prevent data races at compile time!
+```rust 
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &mut s;
+    let r2 = &mut s;
+
+    println!("{}, {}", r1, r2);
+}
+```
+
+### Anyone who is reading a value would not expect the value to suddenly change
+```rust
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &s; // no problem
+    let r2 = &s; // no problem
+    let r3 = &mut s; // BIG PROBLEM
+
+    println!("{}, {}, and {}", r1, r2, r3);
+}
+```
 
 # Sources
 * https://www.rust-lang.org/
