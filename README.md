@@ -596,7 +596,7 @@ fn main() {
 
 **Application** | **Java** | **Rust**  
 --- | --- | ---
-HTTP endpoints | Spring MVC | Rocket, ArcticX
+HTTP endpoints | Spring MVC | Rocket, Actix
 ORM | Hibernate, JPA | diesel
 Database migration | liquibase | diesel
 Dependency Management | Maven | Cargo
