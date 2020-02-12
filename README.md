@@ -534,8 +534,13 @@ fn main() {
 > Foreign Function Interface (FFI)
 
 ## Write your important library functions in C/C++
+### Provide header files for the library / modify them, to not mangle functions
 ```c++
-extern "C" int get_truth() {
+extern "C" int get_truth();
+```
+### The library itself
+```c++
+int get_truth() {
     return 42;
 }
 ```
@@ -552,6 +557,24 @@ fn main() {
 }
 ```
 
+## Use rusts toolchain to link Libraries with rust
+```rust
+extern crate cc;
+
+// Example custom build script.
+fn main() {
+    // Tell Cargo that if the given file changes, to rerun this build script.
+    println!("cargo:rerun-if-changed=external/important_library.cpp");
+    println!("cargo:rerun-if-changed=external/important_library.hpp");
+    // Use the `cc` crate to build a C file and statically link it.
+    cc::Build::new()
+        .file("external/important_library.cpp")
+        .include("external/")
+        .cpp(true) // CPP compilation
+        .compile("important_library");
+}
+```
+
 
 # Sources
 * https://www.rust-lang.org/
@@ -559,3 +582,4 @@ fn main() {
 * https://github.com/rust-lang/book
 * https://techdifferences.com/difference-between-stack-and-heap.html
 * https://docs.rust-embedded.org/book/interoperability/c-with-rust.html
+* https://github.com/alexcrichton/cc-rs
