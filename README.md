@@ -84,7 +84,7 @@ int main() {
 ## Who uses Rust?
 * Firefox: Servo Browser Engine
 * Dropbox
-* Cloadflare
+* Cloudflare
 * NPM
 
 ## Ecosystem
