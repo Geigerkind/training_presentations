@@ -109,7 +109,7 @@ cargo run
 * Structs and enums
 * Traits
 * OOP in rust
-* Integrating C/C++ libraries into Rust
+* Integrating C/C++ functions into Rust
 
 # Basics
 ## Variables
@@ -530,7 +530,29 @@ fn main() {
 }
 ```
 
+# Integrating C/C++ functions into Rust
+> Foreign Function Interface (FFI)
 
+## Write your important library functions in C/C++
+```c++
+#include <stdint.h>
+
+extern "C" int32_t get_truth() {
+    return 42;
+}
+```
+## Expose functions to Rust
+```rust
+extern {
+    fn get_truth() -> i32;
+}
+
+fn main() {
+    unsafe {
+        println!("The truth is {}!", get_truth());
+    }
+}
+```
 
 
 # Sources
@@ -538,3 +560,4 @@ fn main() {
 * https://en.wikipedia.org/wiki/Rust_(programming_language)
 * https://github.com/rust-lang/book
 * https://techdifferences.com/difference-between-stack-and-heap.html
+* https://docs.rust-embedded.org/book/interoperability/c-with-rust.html
