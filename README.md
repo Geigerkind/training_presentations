@@ -84,11 +84,21 @@ int main() {
 * 2015 First stable release
 
 ## Who uses Rust?
-TODO
+* Firefox: Servo Browser Engine
+* Dropbox
+* Cloadflare
+* NPM
 
 ## Ecosystem
-* Open-Source  
-TODO
+* Open-Source (https://github.com/rust-lang)
+* Crates.io (Package manager)
+* Fully backwards compatible
+* Cargo includes:
+    * Testing
+    * Linting (Clippy)
+    * Dependency management
+* Community driven development
+* Very good documentation
 
 ## Hello World
 ```rust
@@ -110,6 +120,7 @@ cargo run
 * Traits
 * OOP in rust
 * Integrating C/C++ functions into Rust
+* Outlook: Rust for business applications
 
 # Basics
 ## Variables
