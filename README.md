@@ -65,6 +65,7 @@ int main() {
 * "Dip down" into lower level, **without** taking unnecessary risks of crashes and **security holes**
 * Reliable, efficient and memory efficient code
 * Low risk parallelism
+* Coding **with** the compiler and not against it
 
 ## Domain
 * System programming (Drivers, Operating systems, etc.)
@@ -81,6 +82,10 @@ int main() {
 * 2011 Rust compiler compiled itself
 * 2012 Pre-Alpha release
 * 2015 First stable release
+
+## Ecosystem
+* Open-Source  
+TODO
 
 ## Hello World
 ```rust
@@ -242,6 +247,35 @@ fn main() {
     println!("{}, {}, and {}", r1, r2, r3);
 }
 ```
+
+## Dangling References
+### C++: Will compile just fine
+```c++
+int main() {
+    int *answer;
+    {
+        int calc_answer = 2*3*7;
+        answer = &calc_answer;
+    }
+    std::cout << "Address of answer: " << answer << std::endl;
+    std::cout << "Answer is: " << *answer << std::endl;
+}
+```
+
+### Rust: Will complain during compilation
+```rust
+fn dangle() -> &String {
+    let s = String::from("hello");
+    &s
+}
+
+fn main() {
+    let reference_to_nothing = dangle();
+}
+```
+
+
+
 
 # Sources
 * https://www.rust-lang.org/
