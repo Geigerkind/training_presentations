@@ -171,7 +171,7 @@ int main() {
 ```
 <img src="img/ownership/ownership_1_cpp.svg" alt="drawing" width="300"/>
 
-### Rust: dog2 takes ownership of dog1 (Similar to Resource Acquisition Is Initialization (RAII))
+### Rust: dog2 takes ownership of dog1
 ```rust
 fn main() {
     let dog1 = String::from("Snuffles");
@@ -181,6 +181,11 @@ fn main() {
 }
 ```
 <img src="img/ownership/ownership_1_rust.svg" alt="drawing" width="300"/>
+
+> Resource Acquisition Is Initialization (RAII)
+
+> After leaving the scope where dog1/2 were initialized, **drop** will be called. This is similar to the destructor in C++.
+
 
 ### C++: dog2 takes ownership of dog1
 ```c++
