@@ -4,9 +4,7 @@
 class Dog {
     std::string mName;
 public:
-    Dog(const char* name) {
-        mName = std::move(name);
-    }
+    Dog(const char* name) : mName(name) {}
 
     void bark() {
         std::cout << "Wuff!" << std::endl;
