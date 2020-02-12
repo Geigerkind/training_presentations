@@ -586,6 +586,14 @@ fn main() {
 }
 ```
 
+# Outlook: Rust for business applications
+
+**Application** | **Java** | **Rust**  
+--- | --- | ---
+HTTP endpoints | Spring MVC | Rocket, ArcticX
+ORM | Hibernate, JPA | diesel
+Database migration | liquibase | diesel
+Dependency Management | Maven | Cargo
 
 # Sources
 * https://www.rust-lang.org/
