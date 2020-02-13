@@ -348,6 +348,8 @@ impl Default for Issue {
 # Enumerations
 > Rust’s enums are most similar to **algebraic data types** in functional languages, such as F#, OCaml, and Haskell.
 
+> The most similar equivalent in C++ is the std::variant.
+
 ## Example: IssuePriority
 ```rust
 enum IssuePriority {
@@ -490,6 +492,8 @@ impl SomeTuple {
 
 ## Trait objects
 > Define a trait for **common** behavior.
+
+> Inheritance for dynamic polymorphism is too instrusive, whereas trait objects are unobtrusive. ([source]((https://www.youtube.com/watch?v=VSlBhAOLtFA)))
 
 ### Example GUI components
 ```rust
