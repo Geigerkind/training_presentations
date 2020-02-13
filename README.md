@@ -66,6 +66,7 @@ int main() {
     * Crates.io
     * Composability
     * Helpful error messages
+    * Significantly [easier](https://www.youtube.com/watch?v=VSlBhAOLtFA) to [learn](http://static.fjcdn.com/pictures/Learn+c+in+21+days_7ee339_3181601.jpg)
 
 ## Domain
 * System programming (Drivers, Operating systems, etc.)
