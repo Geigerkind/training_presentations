@@ -54,14 +54,18 @@ int main() {
 
 # What is Rust?
 
-## Goals
+## Goals and core values
 > Take, for example, **“systems-level” work** that deals with low-level details of **memory management, data representation, and concurrency**. Traditionally, this realm of programming is seen as arcane, accessible only to a select few who have devoted the necessary years learning to **avoid its infamous pitfalls**. And even those who practice it do so with caution, lest their code be open to **exploits, crashes, or corruption**.
-* Eliminate pitfalls
-* Friendly and polished set of tools
-* "Dip down" into lower level, **without** taking unnecessary risks of crashes and **security holes**
-* Reliable, efficient and memory efficient code
-* Low risk parallelism
-* Coding **with** the compiler and not against it
+* Safety
+    * Ownership and borrowing system
+    * Type safety
+* Performance
+    * Low risk parallelism
+* Productivity
+    * Cargo ([Dependency Management](https://wiki.alopex.li/LetsBeRealAboutDependencies), Linting, testing etc.)
+    * Crates.io
+    * Composability
+    * Helpful error messages
 
 ## Domain
 * System programming (Drivers, Operating systems, etc.)
@@ -89,10 +93,7 @@ int main() {
 * Open-Source (https://github.com/rust-lang)
 * Crates.io (Package manager)
 * Fully backwards compatible
-* Cargo includes:
-    * Testing
-    * Linting (Clippy)
-    * Dependency management
+* Cargo
 * Community driven development
 * Very good documentation
 
