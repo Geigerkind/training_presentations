@@ -1,10 +1,9 @@
 #include <iostream>
+#include <memory>
 
 int* dangling() {
-    int *a = (int*)malloc(sizeof(int));
-    *a = 2*3*7;
-    delete a;
-    return a;
+    auto a = std::make_unique<int>(2*3*7);
+    return a.get();
 }
 
 int main() {
