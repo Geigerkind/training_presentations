@@ -15,6 +15,7 @@ import {LoadingBarInterceptor} from "./service/interceptor/loading_bar";
 import {APIService} from "./service/api";
 import {NotificationListModule} from "./module/notification_list/module";
 import {SettingsService} from "./service/settings";
+import { HeroTableModule } from './module/hero_table/module';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -35,6 +36,7 @@ export function createTranslateLoader(http: HttpClient) {
             }
         }),
         Routing,
+        HeroTableModule,
         NotificationListModule,
     ],
     providers: [
