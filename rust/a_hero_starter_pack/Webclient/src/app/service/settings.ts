@@ -5,7 +5,7 @@ import {Injectable} from "@angular/core";
 })
 export class SettingsService {
     private settings: Array<string> = [
-        "API_TOKEN"
+        "table_filter_heroes_search"
     ];
 
     private observers: any = {};

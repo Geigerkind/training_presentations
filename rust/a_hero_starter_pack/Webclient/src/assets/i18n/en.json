@@ -1,6 +1,8 @@
 {
     "serverResponses": {
         "401": "Unauthorized!",
+        "429": "Too many requests!",
+        "502": "Backend server is down!",
         "521": "Consent has already been given!",
         "522": "No consent has been given yet!",
         "523": "None of your characters is the guild master of this guild!",
@@ -8,5 +10,16 @@
     },
     "NavigationBar": {
         "heroes": "Heroes"
+    },
+    "Heroes": {
+        "id": "Id",
+        "name": "Name",
+        "sub_title": "Titel",
+        "strength": "Stärke",
+        "weakness": "Schwäche",
+        "hero_call": "Intro call"
+    },
+    "Table": {
+        "total": "{{amount}} total"
     }
 }
