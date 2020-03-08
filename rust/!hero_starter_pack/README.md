@@ -5,7 +5,7 @@ Your mission is to get the control interface back to work. It is integral on whi
 
 ## Installation
 1. Install the proper Rust toolchain.
-    1. Install rustup and the rust compiler
+    1. Install rustup and the rust compiler. ([Windows](https://rustup.rs/#))
         ```shell-script
         pacman -S rustup
         rustup install nightly
@@ -15,12 +15,12 @@ Your mission is to get the control interface back to work. It is integral on whi
         ```shell-script
         pacman -S cargo
         ```
-2. Install docker and docker-compose
+2. Install docker and docker-compose ([Windows](https://docs.docker.com/docker-for-windows/))
     ```shell-script
     pacman -S docker docker-compose
     systemctl start docker
     ```
-3. Install NPM
+3. Install NPM ([Windows](https://nodejs.org/en/download/))
     ```shell-script
     pacman -S npm
     ```
