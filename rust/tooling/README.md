@@ -12,7 +12,8 @@ TODO
     * Cargo fmt
     * cargo doc
     * cargo clippy
-    * rls/rust-analyzer
+    * rls/rust-analyzer (VSCode, IntelliJ)  
+    
 TODO: Formatters etc.
 ## Custom build steps
 TODO: Useful for integrating C/C++ libraries for example

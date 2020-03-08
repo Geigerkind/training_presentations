@@ -1,5 +1,5 @@
 # Hero starter pack
-Every good here starts out with some basic equipment! We are here to learn `Rust` after all.
+Every good hero starts out with some basic equipment! We are here to learn `Rust` after all.
 
 Your mission is to get the control interface back to work. It is integral on which all following missions depend on. You are our last hope!
 
