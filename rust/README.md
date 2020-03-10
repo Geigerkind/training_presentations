@@ -12,7 +12,6 @@
 * [Error handling](https://github.com/Geigerkind/rust-schulung/tree/master/rust/error_handling)
 * [Code structuring](https://github.com/Geigerkind/rust-schulung/tree/master/rust/code_structuring)
 * [Fearless concurrency](https://github.com/Geigerkind/rust-schulung/tree/master/rust/fearless_concurrency)
-* [Low-level control](https://github.com/Geigerkind/rust-schulung/tree/master/rust/low_level_control)
 * [Asynchronous code](https://github.com/Geigerkind/rust-schulung/tree/master/rust/async_code)
 * [Integrating C/C++ functions](https://github.com/Geigerkind/rust-schulung/tree/master/rust/c_abi_integration)
 * [Long-term viability](https://github.com/Geigerkind/rust-schulung/tree/master/rust/long_term_viability)
