@@ -27,3 +27,5 @@
 * https://doc.rust-lang.org/book/ch16-00-concurrency.html
 * https://blog.rust-lang.org/inside-rust/2020/03/04/recent-future-pattern-matching-improvements.html
 * https://doc.rust-lang.org/cargo/index.html
+* https://github.com/rust-lang/rust-clippy
+* https://github.com/rust-lang/rustfmt

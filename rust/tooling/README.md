@@ -74,20 +74,26 @@ pub fn add(a:u32, b:u32) -> u32 {
 }
 ```
 
+## Formatting
+> Formats the code according to the **official** Rust style guidelines.
+```shell-script
+rustup component add rustfmt
+cargo fmt
+```
 
+## Linting with Clippy
+> A collection of lints to catch common mistakes and improve your Rust code.  
+> [There are 360 lints included in this crate!](https://rust-lang.github.io/rust-clippy/master/index.html)
+```shell-script
+rustup component add clippy
+cargo clippy
+cargo fix -Z unstable-options --clippy
+```
 
-## Tools
-* Standard tools
-    * Cargo fmt
-    * cargo doc
-    * cargo clippy
-    * rls/rust-analyzer (VSCode, IntelliJ)  
-* Continues Integration
-* Build scripts
-* Benchmarking
-    
-TODO: Formatters etc.
-## Custom build steps
-TODO: Useful for integrating C/C++ libraries for example
+## Other Tools
+* Rust provides a **language server** => Language support, e.g. Code and IntelliJ
+* Easy continues integration
+* Build scripts ([See integration of C/C++ libraries](https://github.com/Geigerkind/training_presentations/tree/master/rust/c_abi_integration))
+
 ## Macros
-Write Rust programs that manipulate Rust programs
+> Write Rust programs that manipulate Rust programs.
