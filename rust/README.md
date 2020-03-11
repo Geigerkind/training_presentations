@@ -28,3 +28,4 @@
 * https://doc.rust-lang.org/cargo/index.html
 * https://github.com/rust-lang/rust-clippy
 * https://github.com/rust-lang/rustfmt
+* https://rust-lang.github.io/async-book/
