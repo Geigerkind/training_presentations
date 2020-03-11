@@ -24,3 +24,23 @@ fn compute_length(input: &str) -> usize {
     input.len()
 }
 ```
+
+## `println!` macro
+```rust
+fn main() {
+    println!("Hello, {}! The magic number is {}!", "George", 42);
+}
+```
+
+## Comments
+```rust
+// This is a single line comment
+/*
+* This is a block comment
+*/
+```
+
+# Exercise
+Print the first 100 entries of the fibonacci sequence.
+> `f_n = f_(n-1) + f_(n-2)`, where `f_1 = f_2 = 1`  
+> **Example:** 0, 1, 1, 2, 3, 5, 8, 13, 21...
