@@ -97,3 +97,10 @@ cargo fix -Z unstable-options --clippy
 
 ## Macros
 > Write Rust programs that manipulate Rust programs.
+
+# Exercise
+1. Extract your `fibonacci` computation into an function.
+2. Write a few tests for it.
+3. Run the tests.
+4. Annotate the `fibonacci` function with some documentation.
+5. Generate the documentation and see if you can find your function.
