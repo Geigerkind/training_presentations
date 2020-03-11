@@ -56,11 +56,20 @@ fn main() {
 > Folders require special **mod** file
 
 ```rust
+use front_of_house::serving;
+
 mod front_of_house;
 
 fn main() {
-    front_of_house::serving::take_order();
+    serving::take_order();
 }
 
 ```
 > front_of_house is a **folder** with two files **serving** and **hosting**
+
+# Exercise
+1. Create a `tools` and a `tests` folder.
+2. Extract a file for the fibonacci method.
+3. Extract a file for the tests of the fibonacci method.
+4. Print some value of the fibonacci sequence in the `main` function (using the predefined function).
+5. See if the tests are still running.
