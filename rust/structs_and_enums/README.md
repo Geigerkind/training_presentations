@@ -62,15 +62,6 @@ enum Option<T> {
 
 * Improves confidence in the code
 
-## Other enums: Result
-### Explicit error handling
-```rust
-enum Result<T, E> {
-    Ok(T),
-    Err(E),
-}
-```
-
 ## Pattern matching
 ### Match Control Flow Operator
 ```rust
