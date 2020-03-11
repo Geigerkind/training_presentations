@@ -1,3 +1,6 @@
+# Big UFF
+There are numerous problems für Windows and Mac. Therefore, this section will be postponed for now.
+
 # Hero starter pack
 Every good hero starts out with some basic equipment! We are here to learn `Rust` after all.
 
