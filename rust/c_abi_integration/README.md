@@ -1,8 +1,6 @@
 # Integrating C/C++ functions into Rust using the Foreign Function Interface (FFI)
 > There is no point in reinventing the wheel and be all [RIIR](https://github.com/ansuz/RIIR) about it.
 
-TODO: We hook into C ABI (Also used in python, ruby, etc.)
-
 ## Write your important library functions in C/C++
 ### Provide header files for the library / modify them, to not mangle functions
 ```c++

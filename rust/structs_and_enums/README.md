@@ -74,7 +74,6 @@ fn print_issue_priority(priority: IssuePriority) {
     }
 }
 ```
-TODO: https://blog.rust-lang.org/inside-rust/2020/03/04/recent-future-pattern-matching-improvements.html
 
 ### Functions
 ```rust
@@ -85,3 +84,20 @@ fn compute_length(input: &String) -> usize {
     input.len() // Input is of the type '&String'
 }
 ```
+
+### Subslice patterns
+```rust
+let (start, end) = match attrs {
+    [] => (0,0),
+    [x0] => (x0, x0),
+    [x0, .., xn] => (x0, xn),
+};
+```
+
+### Or pattern
+```rust
+let Ok(x) | Err(x) = foo();
+println!("Content of result {}", x);
+```
+
+And many more...

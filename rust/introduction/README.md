@@ -76,7 +76,6 @@ int main() {
     * No reflection
     * No runtime-aided debugging
 * Powerful and strict type system
-    * TODO: You have to handle errors
 
 ## Domain
 * System programming (Drivers, Operating systems, etc.)
