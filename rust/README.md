@@ -1,6 +1,33 @@
 # Rust - Tour of Heroes
 ![Rust Logo](./img/logo.png)
 
+# Installation
+You will need this software!
+
+## Software and compiler
+### Windows
+* [RustUp](https://rustup.rs/#)
+* [Docker](https://docs.docker.com/docker-for-windows/)
+* [NPM](https://nodejs.org/en/download/)
+
+### MAC
+* [RustUp](https://rustup.rs/#)
+* [Docker](https://docs.docker.com/docker-for-mac/install/)
+* [NPM](https://nodejs.org/en/download/)
+
+### Linux
+```shell-script
+yay -S rustup docker docker-compose
+systemctl start docker
+```
+
+## Further configuration
+```shell-script
+# The windows installer will ask you, but you can also use the CLI afterwards
+rustup install nightly
+rustup default nightly
+```
+
 # Agenda
 * [Introduction](https://github.com/Geigerkind/rust-schulung/tree/master/rust/introduction)
 * [Basics](https://github.com/Geigerkind/rust-schulung/tree/master/rust/basics)
