@@ -75,16 +75,6 @@ fn print_issue_priority(priority: IssuePriority) {
 }
 ```
 
-### Functions
-```rust
-fn compute_length(&input: &String) -> usize {
-    input.len() // Input is of the type 'String'
-}
-fn compute_length(input: &String) -> usize {
-    input.len() // Input is of the type '&String'
-}
-```
-
 ### Subslice patterns
 ```rust
 let (start, end) = match attrs {
