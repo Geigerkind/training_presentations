@@ -1,5 +1,7 @@
 # Rust - Tour of Heroes
-![Rust Logo](./img/logo.png)
+<div style="text-align: center">
+    <img src="./img/logo.png" alt="drawing" width="500"/>
+</div>
 
 # Installation
 You will need this software!
