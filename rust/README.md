@@ -33,6 +33,10 @@ rustup install nightly
 rustup default nightly
 ```
 
+## IDE
+* Code offers the "Rust language server" or "Rust analyzer"
+* IntelliJ offers the "Rust plugin" (Recommended)
+
 # Agenda
 * [Introduction](https://github.com/Geigerkind/rust-schulung/tree/master/rust/introduction)
 * [Basics](https://github.com/Geigerkind/rust-schulung/tree/master/rust/basics)
