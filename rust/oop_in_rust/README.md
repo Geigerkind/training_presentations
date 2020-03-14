@@ -94,3 +94,10 @@ fn main() {
     screen.run();
 }
 ```
+
+# Exercise
+1. Model an `AnimalPictureBook`
+    1. Name
+    2. Pages for different animals
+2. The selling point of this book is that it contains audio a speaker which is supposed to play the animals sounds.  
+So each animal should implement the `AnimalSound` trait, which provides the function `play_sound`.
