@@ -54,10 +54,11 @@ fn compute_length(input: &str) -> usize {
 }
 ```
 
-## `println!` macro
+## Useful macros
 ```rust
 fn main() {
-    println!("Hello, {}! The magic number is {}!", "George", 42);
+    let name = format!("{1}{0}", "rge", "Geo");
+    println!("Hello, {}! The magic number is {}!", name, 42);
 }
 ```
 
