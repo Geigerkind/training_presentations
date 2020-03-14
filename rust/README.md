@@ -41,6 +41,7 @@ rustup default nightly
 * [Traits](https://github.com/Geigerkind/rust-schulung/tree/master/rust/traits)
 * [OOP in Rust](https://github.com/Geigerkind/rust-schulung/tree/master/rust/oop_in_rust)
 * [Error handling](https://github.com/Geigerkind/rust-schulung/tree/master/rust/error_handling)
+* [A Tour Of Heroes](https://github.com/Geigerkind/training_presentations/tree/master/rust/a_hero_starter_pack)
 * [Fearless concurrency](https://github.com/Geigerkind/rust-schulung/tree/master/rust/fearless_concurrency)
 * [Asynchronous code](https://github.com/Geigerkind/rust-schulung/tree/master/rust/async_code)
 * [Integrating C/C++ functions](https://github.com/Geigerkind/rust-schulung/tree/master/rust/c_abi_integration)

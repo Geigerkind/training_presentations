@@ -84,3 +84,8 @@ fn main() {
     let reference_to_nothing = dangle();
 }
 ```
+
+# Exercise
+1. Create a function that borrows a variable and does something with it
+2. Attempt to borrow it to multiple variables
+3. Play around with mutability
