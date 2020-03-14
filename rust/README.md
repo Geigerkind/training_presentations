@@ -4,7 +4,7 @@
 </p>
 
 # Installation
-You will need this software!
+You will need this software for this training!
 
 ## Software and compiler
 ### Windows
@@ -15,7 +15,7 @@ You will need this software!
     * C++ Build tools for desktop
     * Select: MSVC and Windows 10 SDK
 
-### MAC
+### Mac
 * [RustUp](https://rustup.rs/#)
 * [Docker](https://docs.docker.com/docker-for-mac/install/)
 * [NPM](https://nodejs.org/en/download/)
@@ -44,10 +44,10 @@ rustup default nightly
 * [OOP in Rust](https://github.com/Geigerkind/rust-schulung/tree/master/rust/oop_in_rust)
 * [Error handling](https://github.com/Geigerkind/rust-schulung/tree/master/rust/error_handling)
 * [A Tour Of Heroes](https://github.com/Geigerkind/training_presentations/tree/master/rust/a_hero_starter_pack)
-* [Fearless concurrency](https://github.com/Geigerkind/rust-schulung/tree/master/rust/fearless_concurrency)
-* [Asynchronous code](https://github.com/Geigerkind/rust-schulung/tree/master/rust/async_code)
-* [Integrating C/C++ functions](https://github.com/Geigerkind/rust-schulung/tree/master/rust/c_abi_integration)
 * [Long-term viability](https://github.com/Geigerkind/rust-schulung/tree/master/rust/long_term_viability)
+* Appendix A: [Fearless concurrency](https://github.com/Geigerkind/rust-schulung/tree/master/rust/fearless_concurrency)
+* Appendix B: [Asynchronous code](https://github.com/Geigerkind/rust-schulung/tree/master/rust/async_code)
+* Appendix C: [Integrating C/C++ functions](https://github.com/Geigerkind/rust-schulung/tree/master/rust/c_abi_integration)
 
 # Sources
 * https://www.rust-lang.org/
