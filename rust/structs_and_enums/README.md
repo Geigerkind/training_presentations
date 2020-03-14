@@ -112,5 +112,5 @@ And many more...
     1. Degree: None
     2. State: Programming
     3. Beverage: Coffee
-
 3. Create two programmers and print them via `println!("{:?}, {:?}", programmer_1, programmer_2)`.
+4. Write a function that will print the state of a programmer without using `{:?}`.
