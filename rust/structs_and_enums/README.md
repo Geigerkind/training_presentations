@@ -91,3 +91,26 @@ println!("Content of result {}", x);
 ```
 
 And many more...
+
+# Exercise
+1. Model the `programmer`.
+    1. Name
+    2. Age
+    3. Degree (Bachelor(Science, Arts, Business), Master, PHD)
+        1. None
+        2. Bachelor (Science, Arts, Business)
+        3. Master (Science, Arts, Business)
+        4. PHD (Type)
+    4. State
+        1. Eating
+        2. Sleeping
+        3. Programming
+    5. Beverage
+        1. Coffee
+        2. Beer
+2. There are default parameters for
+    1. Degree: None
+    2. State: Programming
+    3. Beverage: Coffee
+
+3. Create two programmers and print them via `println!("{:?}, {:?}", programmer_1, programmer_2)`.

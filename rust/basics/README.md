@@ -1,4 +1,33 @@
 # Basics
+## Types
+```rust
+// Integer
+let signed_char: i8;
+let unsigned_char: u8;
+let signed_smallint: i16;
+let unsigned_smallint: u16;
+let signed_integer: i32;
+let unsigned_integer: u32;
+let signed_bigint: i64;
+let unsigned_bigint: u64;
+let signed_long_bigint: i128;
+let unsigned_long_bigint: u128;
+
+// Arrays
+// Fixed size
+let bytes: [u8; [32]];
+// Variable size
+let byte_vec: Vec<u8>;
+
+// Map
+let hashmap: HashMap<u32, String>;
+
+// String
+// static
+let static_string: &str = "I am a static string";
+let normal_string: String = String::from(static_string);
+```
+
 ## Variables
 ```rust
 let truth: u8 = 42;
