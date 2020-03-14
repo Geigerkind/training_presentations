@@ -41,7 +41,7 @@ Your mission is to get the control interface back to work. It is integral on whi
 6. Lastly create the `backend` and get going!
     ```shell-script
     cargo new backend
-    cd Backend
+    cd backend
     code ./
     # Implement it
     cargo run

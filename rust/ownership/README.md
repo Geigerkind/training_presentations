@@ -80,3 +80,8 @@ int main() {
     delete dog1;
 }
 ```
+
+# Exercise
+1. Create a function that takes ownership
+2. Does something with it
+3. And then returns it back
