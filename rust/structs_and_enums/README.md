@@ -39,6 +39,7 @@ enum IssuePriority {
     Bug,
     TODO,
     Milestone(u8)
+    // Or named: Milestone { number: u8 }
 }
 
 fn main() {
@@ -106,11 +107,13 @@ And many more...
         2. Sleeping
         3. Programming
     5. Beverage
-        1. Coffee
-        2. Beer
+        1. Coffee (with coffeine)
+        2. Beer (promille)
 2. There are default parameters for
-    1. Degree: None
-    2. State: Programming
-    3. Beverage: Coffee
+    1. Name: None
+    2. Age: None
+    3. Degree: None
+    4. State: Programming
+    5. Beverage: Coffee
 3. Create two programmers and print them via `println!("{:?}, {:?}", programmer_1, programmer_2)`.
-4. Write a function that will print the state of a programmer without using `{:?}`.
+4. Write a function that will print the degree of a programmer without using `{:?}`.
