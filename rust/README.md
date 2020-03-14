@@ -9,6 +9,9 @@ You will need this software!
 * [RustUp](https://rustup.rs/#)
 * [Docker](https://docs.docker.com/docker-for-windows/)
 * [NPM](https://nodejs.org/en/download/)
+* [VS Build Tools](https://visualstudio.microsoft.com/vs/)
+    * C++ Build tools for desktop
+    * Select: MSVC and Windows 10 SDK
 
 ### MAC
 * [RustUp](https://rustup.rs/#)
@@ -17,7 +20,7 @@ You will need this software!
 
 ### Linux
 ```shell-script
-yay -S rustup docker docker-compose
+yay -S rustup docker docker-compose npm
 systemctl start docker
 ```
 
