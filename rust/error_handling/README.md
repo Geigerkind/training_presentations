@@ -56,3 +56,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
     Ok(s)
 }
 ```
+
+# Exercise
+1. Write a `divide` function that throws an `Err` if we divide by 0, or otherwise returns a result with the computation
+2. Write tests with this behavior
