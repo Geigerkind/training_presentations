@@ -116,4 +116,3 @@ And many more...
     4. State: Programming
     5. Beverage: Coffee
 3. Create two programmers and print them via `println!("{:?}, {:?}", programmer_1, programmer_2)`.
-4. Write a function that will print the degree of a programmer without using `{:?}`.

@@ -36,3 +36,7 @@ fn returns_summarizable() -> impl Summary {
     Issue::default()
 }
 ```
+
+# Exercise
+Write a function that will print the degree of a programmer without using `{:?}`.  
+These [resources](https://doc.rust-lang.org/std/fmt/trait.Display.html) may help you.
