@@ -1,0 +1,16 @@
+[package]
+name = "sample"
+version = "0.1.0"
+authors = ["Tom Dymel <td@wps.de>"]
+edition = "2018"
+
+[dependencies]
+rocket="0.4.4"
+mysql = "18.0.0"
+serde = "*"
+serde_derive = "*"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]

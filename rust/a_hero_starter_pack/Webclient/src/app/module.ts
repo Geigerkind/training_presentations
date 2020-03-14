@@ -45,7 +45,7 @@ export function createTranslateLoader(http: HttpClient) {
         NotificationService,
         SettingsService,
         APIService,
-        {provide: HTTP_INTERCEPTORS, useClass: LoadingBarInterceptor, multi: true, deps: [LoadingBarService]},
+        {provide: HTTP_INTERCEPTORS, useClass: LoadingBarInterceptor, multi: true, deps: [LoadingBarService]}
     ],
     bootstrap: [App]
 })

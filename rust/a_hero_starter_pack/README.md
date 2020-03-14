@@ -21,7 +21,7 @@ Your mission is to get the control interface back to work. It is integral on whi
     cd backend
     code ./
     # Implement it
-    cargo run
+    ROCKET_ENV=stage cargo run
     ``` 
 
 ## Mission
@@ -32,20 +32,18 @@ Your mission is to get the control interface back to work. It is integral on whi
     │   └── ...
     ├── transfer
     │   └── ...
-    ├── tests
-    │   └── ...
     └── domain
         └── ...
     ```
 2. Integrate the web framework [Rocket](https://rocket.rs/).
 3. Implement an `Hello, World!` endpoint under `/API/`.
 4. Model a structure that maintains a list of our heroes.
-5. Let `Rocket` [manage](https://rocket.rs/v0.4/guide/state/#managed-state) your stucture.
+5. Let `Rocket` [manage](https://rocket.rs/v0.4/guide/state/#managed-state) your structure.
 6. Write an Initializing function for your structure that loads the list of heroes from the database.
     * You could use [this crate](https://docs.rs/mysql/18.0.0/mysql/) for example.
     * IP: localhost/127.0.0.1
     * Port: 3306
-    * User: root/mysql
+    * User: root
     * Password: vagrant
     * DB name: main
     * Table name: heroes
@@ -71,6 +69,7 @@ Your mission is to get the control interface back to work. It is integral on whi
 15. The Frontend sends filter/sorting parameters to the backend.
     * The structure looks the following
         ```rust
+        #[derive(Debug, Clone, Serialize, Deserialize)]
         pub struct HeroSearchFilter {
             pub page: u32,
             pub id: TableFilter<u32>,
@@ -80,16 +79,22 @@ Your mission is to get the control interface back to work. It is integral on whi
             pub weakness: TableFilter<String>,
             pub hero_call: TableFilter<String>,
         }
-        ```
-        ```rust
+        #[derive(Debug, Clone, Serialize, Deserialize)]
         pub struct TableFilter<T> {
             pub filter: Option<T>,
             pub sorting: Option<bool>,
         }
+        #[derive(Debug, Clone, Serialize, Deserialize)]
+        pub struct SearchResult<T> {
+            pub result: Vec<T>,
+            pub num_items: usize,
+        }
         ```
+        
     1. Modify your `get_heroes` endpoint:
         * Method: POST
-        * Paramater: Json<HeroSearchFilter>
+        * Parameter: Json<HeroSearchFilter>
+        * Output: Json<SearchResult<Hero>>
         * You may want to take a look at [this](https://rocket.rs/v0.4/guide/requests/#format).
     2. Modify your trait to also take the `HeroSearchFilter`.
     3. Now use the `HeroSearchFilter` object to filter and sort the your hero list.

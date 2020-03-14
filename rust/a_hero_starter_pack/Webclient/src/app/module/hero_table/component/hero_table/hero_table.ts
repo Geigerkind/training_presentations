@@ -15,7 +15,7 @@ import { HeroesService } from '../../service/heroes';
 export class HeroTableComponent implements OnInit {
 
     header_columns: Array<HeaderColumn> = [
-        {index: 0,filter_name: 'id',labelKey: "Heroes.id",type: 1,type_range: null,col_type: 3},
+        {index: 0, filter_name: 'id', labelKey: "Heroes.id", type: 1, type_range: null, col_type: 3},
         {index: 1, filter_name: 'name', labelKey: "Heroes.name", type: 0, type_range: null, col_type: 0},
         {index: 2, filter_name: 'sub_title', labelKey: "Heroes.sub_title", type: 0, type_range: null, col_type: 0},
         {index: 3, filter_name: 'strength', labelKey: "Heroes.strength", type: 0, type_range: null, col_type: 0},
@@ -50,7 +50,7 @@ export class HeroTableComponent implements OnInit {
                     const body_columns: Array<BodyColumn> = [];
                     body_columns.push({
                         type: 1,
-                        content: row.id.to_string(),
+                        content: row.id.toString(),
                         args: null
                     });
                     body_columns.push({
@@ -78,7 +78,6 @@ export class HeroTableComponent implements OnInit {
                         content: row.hero_call ? row.hero_call : '',
                         args: null
                     });
-
                     return {
                         color: null,
                         columns: body_columns

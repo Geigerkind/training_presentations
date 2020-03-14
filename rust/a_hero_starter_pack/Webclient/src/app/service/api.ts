@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {NotificationService} from "./notification";
 import {Severity} from "../domain_value/severity";
 import {APIFailure} from "../domain_value/api_failure";
@@ -9,7 +9,7 @@ import {Observable} from "rxjs";
     providedIn: "root",
 })
 export class APIService {
-    private static readonly API_PREFIX: string = "//localhost:8000/API";
+    private static readonly API_PREFIX: string = "/API";
 
     constructor(private httpClient: HttpClient,
                 private notificationService: NotificationService) {
