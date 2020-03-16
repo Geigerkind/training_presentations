@@ -40,6 +40,7 @@ enum IssuePriority {
     TODO,
     Milestone(u8)
     // Or named: Milestone { number: u8 }
+    // ^- Pattern matching behavior would be different, because this is a "struct on the fly" and the other a "tuple on the fly"
 }
 
 fn main() {
@@ -105,11 +106,10 @@ And many more...
 1. Model the `programmer`.
     1. Name
     2. Age
-    3. Degree (Bachelor(Science, Arts, Business), Master, PHD)
-        1. None
-        2. Bachelor (Science, Arts, Business)
-        3. Master (Science, Arts, Business)
-        4. PHD (Type)
+    3. Optional Degree (Bachelor(Science, Arts, Business), Master, PHD)
+        1. Bachelor (Science, Arts, Business)
+        2. Master (Science, Arts, Business)
+        3. PHD (Type)
     4. State
         1. Eating
         2. Sleeping
