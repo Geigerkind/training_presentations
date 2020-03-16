@@ -13,6 +13,9 @@ let unsigned_bigint: u64;
 let signed_long_bigint: i128;
 let unsigned_long_bigint: u128;
 
+// Boolean
+let bool_var: bool;
+
 // Floats
 let float_32: f32;
 let float_64: f64;
