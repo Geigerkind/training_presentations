@@ -13,6 +13,10 @@ let unsigned_bigint: u64;
 let signed_long_bigint: i128;
 let unsigned_long_bigint: u128;
 
+// Floats
+let float_32: f32;
+let float_64: f64;
+
 // Arrays
 // Fixed size
 let bytes: [u8; [32]];
@@ -51,6 +55,17 @@ if answer == 42 || answer == 21 {
 ```rust
 fn compute_length(input: &str) -> usize {
     input.len()
+}
+```
+
+## Loops
+```rust
+for i in 0.100 {
+    // Do something
+}
+
+while true {
+    // Do sth
 }
 ```
 
