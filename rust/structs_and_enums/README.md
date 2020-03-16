@@ -76,6 +76,14 @@ fn print_issue_priority(priority: IssuePriority) {
 }
 ```
 
+### If-let pattern
+```rust
+let opt_str = Some("String");
+if let Some(inner_str) = opt_str {
+    println!("Inner str: {}", inner_str);
+}
+```
+
 ### Subslice patterns
 ```rust
 let (start, end) = match attrs {
