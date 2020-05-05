@@ -66,3 +66,4 @@ rustup default nightly
 * https://github.com/rust-lang/rust-clippy
 * https://github.com/rust-lang/rustfmt
 * https://rust-lang.github.io/async-book/
+* https://doc.rust-lang.org/rust-by-example
