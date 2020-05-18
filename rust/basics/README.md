@@ -22,7 +22,7 @@ let float_64: f64;
 
 // Arrays
 // Fixed size
-let bytes: [u8; [32]];
+let bytes: [u8; 42];
 // Variable size
 let byte_vec: Vec<u8>;
 
