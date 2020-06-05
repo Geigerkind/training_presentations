@@ -71,12 +71,12 @@ Therefore, Rust is very transparent in its changes and development.
 
 <!-- slide -->
 <aside class="notes">
-There is a huge amount of learning ressources ranging from beginner level, via expert level to black magic.
+There is a huge amount of learning resources ranging from beginner level, via expert level to black magic.
 
-The official Rust website provides plenty of free learning ressources and documentation but there are also very good external sources which were created by the community.
+The official Rust website provides plenty of free learning resources and documentation but there are also very good external sources which were created by the community.
 </aside>
 
-## Learning ressources
+## Learning resources
 
 @import "images/community/ressources_1.png"{width="400px"}
 @import "images/community/ressources_2.png"{width="400px"}
