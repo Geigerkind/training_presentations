@@ -76,7 +76,7 @@ There is a huge amount of learning ressources ranging from beginner level, via e
 The official Rust website provides plenty of free learning ressources and documentation but there are also very good external sources which were created by the community.
 </aside>
 
-## Learning ressources
+## Learning resources
 
 @import "images/community/ressources_1.png"{width="400px"}
 @import "images/community/ressources_2.png"{width="400px"}
