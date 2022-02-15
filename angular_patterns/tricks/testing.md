@@ -125,3 +125,16 @@ describe(SomeComponent.name, () => {
 });
 ```
 
+### Keep fields and methods private in components (not services etc.)
+
+## Advantages
+- Makes testing siginificantly easier
+- Time savings
+- Higher coverage
+- More motivation to write tests
+- Easier unit testing
+- Private methods can be mocked
+
+## Disadvantages
+- Components can be in impossible states during tests
+- Behaviour tests over the whole component may be neglected
