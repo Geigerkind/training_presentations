@@ -25,7 +25,7 @@ Split presentation from the form control
 ## Example
 ```ts
 // Custom FormControl model
-export class SomeCustomControlFormControl extends FormControl {
+export class SomeCompFormGroup extends FormGroup {
     constructor() {
         super({
             controlComp: new FormControl()
@@ -39,8 +39,8 @@ export class SomeCustomControlFormControl extends FormControl {
 
 ```ts
 // Presentational Component
-export class SomeCustomControl {
-    @Input() someCustomControlFormControl: SomeCustomControlFormControl;
+export class SomeComp {
+    @Input() someCompFormGroup: SomeCompFormGroup;
 
     // Do fancy stuff for presentation
 }
@@ -52,7 +52,7 @@ export class SomeCustomControl {
 export class Parent {
     constructor() {
         formGroup = new FormGroup({
-            someCustomControl: new SomeCustomControlFormGroup()
+            someComp: new SomeCompFormGroup()
         });
     }
 }
