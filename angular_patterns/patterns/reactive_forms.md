@@ -23,4 +23,38 @@ Split presentation from the form control
 - Less technical code
 
 ## Example
-TODO
+```ts
+// Custom FormControl model
+export class SomeCustomControlFormControl extend FormControl {
+    constructor() {
+        super({
+            controlComp: new FormControl()
+        })
+    }
+
+    ... rest of model logic ...
+}
+
+```
+
+```ts
+// Presentational Component
+export class SomeCustomControl {
+    @Input() someCustomControlFormControl: SomeCustomControlFormControl;
+}
+
+```
+
+```ts
+// Parent compoenent
+export class Parent {
+    constructor() {
+        formGroup = new FormGroup({
+            someCustomControl: new SomeCustomControlFormGroup()
+        });
+    }
+}
+
+```
+
+
